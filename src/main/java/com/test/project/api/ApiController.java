@@ -37,7 +37,7 @@ public class ApiController {
     }
 
     @GetMapping(path = "/slow-but-reactive")
-    public Mono<ResponseEntity<List<String>>> slowButReactive() {m
+    public Mono<ResponseEntity<List<String>>> slowButReactive() {
         return webClient
                 .get()
                 .uri("/slow")
